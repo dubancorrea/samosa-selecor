@@ -1,0 +1,71 @@
+/* Ensure the page fills the browser window */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #242424; /* Dark background */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Horizontal Center */
+  justify-content: center; /* Vertical Center */
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+/* Step 1 & 6: Samosa Styling & Pulse Effect */
+.samosa {
+  height: 15em;
+  padding: 1.5em;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.samosa:hover {
+  transform: scale(1.1);
+}
+
+.samosa:active {
+  transform: scale(0.95);
+}
+
+/* Step 3: Upgrades Container (Side-by-side) */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+/* Step 3: Individual Upgrade Cards */
+.upgrade {
+  border: 1px solid rgba(153, 153, 153, 0.497);
+  border-radius: 12px;
+  padding: 20px 10px;
+  width: 200px;
+  line-height: 0.5;
+  background-color: #1a1a1a;
+}
+
+/* Step 3: Button Styling */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.3em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+  margin-top: 10px;
+  border: 1px solid #646cff; /* Added a little border to make them pop */
+}
+
+button:hover {
+  background-color: #2b2b2b;
+}
